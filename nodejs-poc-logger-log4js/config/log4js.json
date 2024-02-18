@@ -1,0 +1,18 @@
+{
+    "appenders": {
+      "fileAppender": {
+        "type": "file",
+        "filename": "./log/app.log",
+        "maxLogSize": 10485760,
+        "backups": 3,
+        "compress": true
+      },
+      "consoleAppender": { "type": "console" }
+    },
+    "categories": {
+      "default": { 
+        "appenders": ["fileAppender", "consoleAppender"], 
+        "level": "trace" 
+      }
+    }
+  }
