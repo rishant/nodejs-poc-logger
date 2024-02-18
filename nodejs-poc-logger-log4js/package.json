@@ -1,0 +1,19 @@
+{
+  "name": "nodejs-poc-logger-log4js",
+  "version": "1.0.0",
+  "description": "nodejs logger poc code for log4js logging",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "keywords": [
+    "log4js",
+    "logger"
+  ],
+  "author": "rishantgupta007@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "log4js": "^6.9.1"
+  }
+}
