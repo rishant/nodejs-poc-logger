@@ -7,3 +7,9 @@
     npm install bunyan
 
 - example reference: 
+
+
+
+- index_01.js
+
+![screenshot_01.jpg](./screenshot_01.jpg)
