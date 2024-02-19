@@ -5,7 +5,8 @@
 
 # Install log4js dependencies:
     npm install bunyan
-
+    npm install bunyan-rotating-file-stream
+    
 - example reference:
 
     https://github.com/trentm/node-bunyan?tab=readme-ov-file
@@ -28,3 +29,8 @@
 - index_04_custom_stream_write_in_file.js
 
 ![screenshot_04.jpg](./screenshot_04.jpg)
+
+- index_04_custom_stream_write_log_rolling_file.js
+
+![screenshot_05.jpg](./screenshot_05.jpg)
+
