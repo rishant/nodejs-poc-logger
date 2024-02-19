@@ -6,7 +6,18 @@ log4js.configure({
         fileAppender: { 
             type: 'file', 
             filename: './logs/index_02.log', 
-            layout : { type: "pattern", pattern: '[%d] %h %z [%p] %c - %m%n' }
+            layout : { 
+                type: "pattern", 
+                pattern: '[%d] %h %z [%p] %c - %m%n',
+                /*
+                pattern: '%[%r (%x{pid}) %p %c -%] %m%n',
+                tokens: {
+                    pid: function () {
+                        return process.pid;
+                    },
+                },
+                */ 
+            }
         },
         consoleAppender: { type: 'console' }
     },
@@ -21,7 +32,7 @@ log4js.configure({
 
 // Create the logger
 const logger = log4js.getLogger();
-// logger.level = 'info';
+logger.level = 'info';
 
 // Logging messages with different levels
 logger.trace('This is a TRACE message.');
