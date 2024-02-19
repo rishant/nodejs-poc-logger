@@ -6,6 +6,15 @@
 # Install log4js dependencies:
     npm install log4js
 
+- example reference: 
+
+    https://github.com/log4js-node/log4js-node/tree/master/examples
+
+    https://github.com/log4js-node/log4js-node
+    
+    https://log4js-node.github.io/log4js-node
+
+
 - index.js
 
 ![screenshot_01.jpg](./screenshot_01.jpg)

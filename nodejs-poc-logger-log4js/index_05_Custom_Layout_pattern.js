@@ -6,22 +6,22 @@ log4js.configure({
         fileAppender: { 
             type: 'file', 
             filename: './logs/index_02.log', 
-            layout : {
-                type: "pattern", pattern: "%d - %c:[%p]: %m"
-            }
+            layout : { type: "pattern", pattern: '[%d] %h %z [%p] %c - %m%n' }
         },
-        console: { type: 'console' }
+        consoleAppender: { type: 'console' }
     },
     categories: { 
         default: { 
-            appenders: ['fileAppender', 'console'], level: 'error' 
+            appenders: ['fileAppender', 'consoleAppender'], 
+            level: 'info',
+            // enableCallStack: true 
         } 
     }
 });
 
 // Create the logger
 const logger = log4js.getLogger();
-logger.level = 'info';
+// logger.level = 'info';
 
 // Logging messages with different levels
 logger.trace('This is a TRACE message.');
