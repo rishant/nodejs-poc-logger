@@ -21,3 +21,6 @@
 
 ![screenshot_02.jpg](./screenshot_02.jpg)
 
+- index_04_custom_stream_write_in_console.js
+
+![screenshot_03.jpg](./screenshot_03.jpg)
